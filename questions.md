@@ -29,3 +29,5 @@ Ans - In Flutter each Isolate has Eventloop which pick event from Event Queue an
 
  Isolate -> It is small area on machine. It has own memory and that is private for that  Isolate. Isolate has private memory and thred that run EventLoop in isolate.
  Mostly application are single isolate flutter app but according our requirement we can create isolate by using compute() and Flutter.spawn() method.
+
+ Example:- In case we are performing some heavy parsing and downloading process then always create new Isolate via compute() it will improve peformance 
